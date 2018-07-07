@@ -71,8 +71,8 @@ public class Application {
 //        System.out.println(wordMap);
 
 
-//        java.time.LocalDateTime now = java.time.LocalDateTime.now();
-//        System.out.println(now);
+        java.time.LocalDateTime now = java.time.LocalDateTime.now();
+        System.out.println(now);
 
 //        public class Browser {
 //            private URI currentPage;
@@ -85,44 +85,44 @@ public class Application {
 
 
 
-        class HotDog implements Food {
-            private ArrayList<String> toppings = new ArrayList<>();
-
-            @Override
-            public void eat() {
-
-            }
-
-            @Override
-            public boolean hasGluten() {
-                return true;
-            }
-
-            public boolean isChiliDog() {
-                return toppings.contains("Chili");
-            }
-        }
-
-        Food lunch = new HotDog();
-        System.out.println(lunch.hasGluten());
-
-        class Crawler implements Browseable {
-
-            private URI currentPage;
-
-            @Override
-            public void visit(URI uri) {
-                this.currentPage = uri;
-            }
-            @Override
-            public URI getCurrentPage() {
-                return this.currentPage;
-            }
-        }
-
-        Crawler crawler = new Crawler();
-        crawler.visit();
-        System.out.println(crawler.getCurrentPage());
+//        class HotDog implements Food {
+//            private ArrayList<String> toppings = new ArrayList<>();
+//
+//            @Override
+//            public void eat() {
+//
+//            }
+//
+//            @Override
+//            public boolean hasGluten() {
+//                return true;
+//            }
+//
+//            public boolean isChiliDog() {
+//                return toppings.contains("Chili");
+//            }
+//        }
+//
+//        Food lunch = new HotDog();
+//        System.out.println(lunch.hasGluten());
+//
+//        class Crawler implements Browseable {
+//
+//            private URI currentPage;
+//
+//            @Override
+//            public void visit(URI uri) {
+//                this.currentPage = uri;
+//            }
+//            @Override
+//            public URI getCurrentPage() {
+//                return this.currentPage;
+//            }
+//        }
+//
+//        Crawler crawler = new Crawler();
+//        crawler.visit();
+//        System.out.println(crawler.getCurrentPage());
 
 
     }}
