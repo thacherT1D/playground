@@ -1,5 +1,6 @@
 package com.galvanize;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 public class Accumulator {
@@ -20,6 +21,7 @@ public class Accumulator {
         output +=  input[input.length-2] + " and " + input[input.length-1];
 
         return output;
+
     }
 
 }
